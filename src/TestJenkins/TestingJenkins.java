@@ -10,10 +10,10 @@ import com.gargoylesoftware.htmlunit.BrowserVersion;
 public class TestingJenkins {
 
 	public static void main(String[] args) {
-//		System.setProperty("webdriver.chrome.driver","C:/Softwares/chromedriver.exe");
-//		WebDriver driver = new ChromeDriver();
-//		driver.manage().window().maximize();
-		HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.CHROME);
+		System.setProperty("webdriver.chrome.driver","C:/Softwares/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+// 		HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.CHROME);
 		driver.get("http://52.14.181.171:8080/qaenv/");
 		System.out.println(driver.getCurrentUrl());
 		String expmsg="Hello, World!";
