@@ -14,7 +14,7 @@ public class TestingJenkins {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 // 		HtmlUnitDriver driver=new HtmlUnitDriver(BrowserVersion.CHROME);
-		driver.get("http://52.14.181.171:8080/qaenv/");
+		driver.get("http://172.31.22.254:8080/qaenv/");
 		System.out.println(driver.getCurrentUrl());
 		String expmsg="Hello, World!";
 		String actmsg=driver.findElement(By.xpath("html/body")).getText();
